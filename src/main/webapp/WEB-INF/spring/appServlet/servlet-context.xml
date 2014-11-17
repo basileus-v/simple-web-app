@@ -89,7 +89,7 @@
 			These are values from the demo "openid-connect-server-webapp" project of MITREid Connect.
 		-->
 		<bean class="org.mitre.openid.connect.client.SubjectIssuerGrantedAuthority">
-			<constructor-arg name="subject" value="90342.ASDFJWFA" />
+			<constructor-arg name="subject" value="01921.FLANRJQW" />
 			<constructor-arg name="issuer" value="http://localhost:8080/openid-connect-server-webapp/" />
 		</bean>
 	</util:set>
@@ -107,7 +107,7 @@
 		<property name="serverConfigurationService" ref="dynamicServerConfigurationService" />
 		<property name="clientConfigurationService" ref="dynamicClientConfigurationService" />
 		<property name="authRequestOptionsService" ref="staticAuthRequestOptionsService" />
-		<property name="authRequestUrlBuilder" ref="plainAuthRequestUrlBuilder" />
+		<property name="authRequestUrlBuilder" ref="signedAuthRequestUrlBuilder" />
 		
 	</bean>
 
